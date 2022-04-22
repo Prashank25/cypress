@@ -25,7 +25,7 @@ class CypressBoilerplateCommand extends Command
     /**
      * Create a new Artisan command instance.
      */
-    public function __construct(protected Filesystem $files)
+    public function __construct(Filesystem $files)
     {
         parent::__construct();
     }

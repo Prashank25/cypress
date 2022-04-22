@@ -60,7 +60,7 @@ class CypressController
 
     public function currentUser()
     {
-        return auth()->user()?->setHidden([])->setVisible([]);
+        return optional(auth()->user())->setHidden([])->setVisible([]);
     }
 
     public function logout()
